@@ -11,11 +11,5 @@ function findLargest(arr) {
     return largest;
 }
 
-// With reduce
-function findLargestReduce(arr) {
-    return arr.reduce((max, current) => current > max ? current : max, arr[0]);
-}
-
-const numbers = [12, 45, 7, 89, 23, 56];
+let numbers = [12, 45, 7, 89, 23, 56];
 console.log(findLargest(numbers));       // 89
-console.log(findLargestReduce(numbers)); // 89

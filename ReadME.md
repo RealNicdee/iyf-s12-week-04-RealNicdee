@@ -31,3 +31,15 @@ This week I built a console calculator that supports addition, subtraction, mult
    node daily-challenges/fizzbuzz.js
    ```
 
+## Lessons Learned
+- Using === instead of == stopped the surprising case where "5" == 5 was true. Strict equality makes type mismatches obvious.
+- Functions should return a value; putting console.log inside the function made the calculator tests print undefined.
+- const protects values that must never change, while let is for values that can be reassigned.
+- Array methods (map, filter, reduce) are much cleaner than writing every loop by hand.
+- JSON is just text that looks like an object
+- I need JSON.parse to turn it into real data and JSON.stringify to send it the other way.
+
+## Challenges Faced
+- Remembering to return values from functions instead of only logging them.
+- Getting the grade averages to show exactly two decimal places (used toFixed(2) then converted back to number).
+- Understanding the difference between function declarations and arrow functions, especially when to use curly braces.
